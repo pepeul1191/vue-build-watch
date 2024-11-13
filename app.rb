@@ -5,7 +5,8 @@ require 'sinatra'
 set :public_folder, 'public'
 
 # Ruta principal
-get '/' do
-  # Renderiza un archivo HTML desde la carpeta 'public'
-  send_file File.join(settings.public_folder, 'index.html')
+['/', '/about', ].each do |route|
+  get route do
+    erb :home
+  end
 end
