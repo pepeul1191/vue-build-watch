@@ -1,25 +1,27 @@
-import './assets/main.css'
-
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';  // Importa las funciones adecuadas
 import WebLayout from './layouts/WebLayout.vue';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // Importa los componentes que deseas renderizar
-import Home from '@/pages/HomePage.vue';
-import About from '@/pages/AboutPage.vue';
+import HomePage from '@/pages/HomePage.vue';
+import AboutPage from '@/pages/AboutPage.vue';
+import ContactPage from '@/pages/ContactPage.vue';
+import FeaturesPage from '@/pages/FeaturesPage.vue';
+// Importa FontAwesome y los íconos que necesitas
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faThumbsUp, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+// Agrega los íconos a la biblioteca de FontAwesome
+library.add(faThumbsUp, faTrashAlt);
+ 
 // Define las rutas
 const routes = [
-  {
-    path: '/',          // Ruta principal
-    name: 'home',
-    component: Home     // Componente que se muestra en esta ruta
-  },
-  {
-    path: '/about',     // Ruta "/about"
-    name: 'about',
-    component: About    // Componente que se muestra en esta ruta
-  }
+  { path: '/',name: 'home', component: HomePage },
+  { path: '/about',name: 'about', component: AboutPage },
+  { path: '/features',name: 'features', component: FeaturesPage },
+  { path: '/contact',name: 'contact', component: ContactPage },
 ];
 
 // Crea la instancia del router con createRouter
@@ -30,5 +32,6 @@ const router = createRouter({
 
 // Crea la aplicación y usa el router
 createApp(WebLayout)
+  .component('font-awesome-icon', FontAwesomeIcon)
   .use(router)  // Usa el router
   .mount('#app');  // Monta la aplicación en el elemento con id 'app'

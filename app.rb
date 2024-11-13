@@ -5,7 +5,7 @@ require 'sinatra'
 set :public_folder, 'public'
 
 # Ruta principal
-['/', '/about', ].each do |route|
+['/', '/about', '/features', '/contact'].each do |route|
   get route do
     erb :home
   end
