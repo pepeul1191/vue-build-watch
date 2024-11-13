@@ -12,9 +12,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: null, // Esto evita la división del código en múltiples archivos
-        entryFileNames: 'assets/js/main.js', // Nombre fijo para el archivo de entrada (JS)
-        chunkFileNames: 'assets/js/[name].js', // Nombre fijo para los archivos de chunks
-        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: 'dist/main.js', // Nombre fijo para el archivo de entrada (JS)
+        chunkFileNames: 'dist/[name].js', // Nombre fijo para los archivos de chunks
+        assetFileNames: 'dist/[name][extname]',
       }
     }
   },
