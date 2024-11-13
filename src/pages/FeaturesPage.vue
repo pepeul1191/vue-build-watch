@@ -2,7 +2,7 @@
   export default {
     name: 'About',
     mounted() {
-      document.title = 'Caraterísticas'; // Cambia el título cuando el componente se monta
+      document.title = 'Caraterísticas';  // Cambia el título cuando el componente se monta
     }
   };
 </script>
