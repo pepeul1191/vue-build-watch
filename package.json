@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "dev2": "NODE_ENV=development node watch.js",
+    "dev2": "NODE_ENV=development node watch.js & rerun app.rb --ignore='src/*' --ignore='public/*' --ignore='node_modules/*' --ignore='views/*'",
     "preview": "vite preview"
   },
   "dependencies": {

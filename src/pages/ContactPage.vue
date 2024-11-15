@@ -5,7 +5,7 @@
     name: 'About',
     mounted() {
       document.title = 'Contacto'; // Cambia el título cuando el componente se monta
-    },
+    }, 
     data() {
       return {
         modalInstance: null // Añadimos una propiedad para almacenar la instancia del modal

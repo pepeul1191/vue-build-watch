@@ -1,0 +1,19 @@
+body {
+  background-color: #f4f7fa;
+}
+
+.nav-link{
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+}
+
+.nav-link:hover{
+  color: #195aca;
+}
+
+.btn, .form-control, .card-body{
+  border-radius: 0px;
+}
+
+.btn i{
+  margin-right: 10px;
+}

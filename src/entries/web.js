@@ -2,7 +2,6 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';  // Importa las funciones adecuadas
 import WebLayout from '../layouts/WebLayout.vue';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // Importa los componentes que deseas renderizar
 import HomePage from '@/pages/HomePage.vue';
 import AboutPage from '@/pages/AboutPage.vue';

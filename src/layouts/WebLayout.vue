@@ -26,6 +26,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contacto</router-link> <!-- Ruta a contacto -->
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sign-in">Acceder</a> <!-- Ruta a contacto -->
+          </li>
         </ul>
       </div>
     </div>
